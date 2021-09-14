@@ -4,7 +4,7 @@ angkatan = 2021
 programStudi = "Teknologi Informasi "
 jurusan = "PTEI "
 fakultas = "Teknik "
-ipk = 35.8
+ipk = 3.58
 print("Nama saya " + namaLengkap)
 print("NIM " + str(nim))
 print("Saya Angkatan Tahun " + str (angkatan))

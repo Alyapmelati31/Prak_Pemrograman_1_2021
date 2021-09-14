@@ -6,7 +6,7 @@ public class IdentitasDiri {
         String programStudi = "Teknologi Informasi";
         String jurusan = "PTEI";
         String fakultas = "Teknik";
-        double ipk = 35.8;
+        double ipk = 3.58;
         System.out.println("Nama Saya " + nama);
         System.out.println("NIM " + nim);
         System.out.println("Saya Angkatan Tahun " + angkatan);
