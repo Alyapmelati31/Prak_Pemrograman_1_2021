@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IdentitasDiri",
+            "request": "launch",
+            "mainClass": "IdentitasDiri",
+            "projectName": "00-Template_62ae2acd"
+        },
+        {
+            "type": "java",
+            "name": "Launch CobaVar",
+            "request": "launch",
+            "mainClass": "CobaVar",
+            "projectName": "00-Template_62ae2acd"
+        },
+        {
+            "type": "java",
             "name": "Launch MainHello",
             "request": "launch",
             "mainClass": "MainHello",
