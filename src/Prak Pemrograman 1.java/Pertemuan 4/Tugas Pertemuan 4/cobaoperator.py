@@ -14,5 +14,7 @@ print(z)
 
 p = 7
 q = 9
-hasilnya = p + q
+hasilnya = int(p) + int(q)
 print("hasil = " + str(hasilnya))
+
+

@@ -15,5 +15,3 @@ print("hasil = " + str(hasil))
 
 hasil = int(x) % int(y)
 print("hasil = " + str(hasil))
-
-
