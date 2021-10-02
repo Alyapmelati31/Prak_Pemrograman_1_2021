@@ -6,7 +6,7 @@ public class PredikatKelulusan {
         System.out.println("Masukan IPK Anda = ");
         double ipk = scanner.nextDouble();
         System.out.println("Masukan lama studi = ");
-        int lamastudi = scanner.nextInt();
+        double lamastudi = scanner.nextDouble();
         if (ipk >= 3.51 && ipk <= 4 && lamastudi <=4) {
             System.out.println("Selamat Anda Meraih Predikat Summa Cumlaude");
         }else if (ipk >= 3.51 && ipk <= 4 && lamastudi >4)  {

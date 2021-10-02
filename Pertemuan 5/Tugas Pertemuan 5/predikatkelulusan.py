@@ -1,7 +1,7 @@
 ipk = input("Masukan IPK Anda = ")
 ipk = float(ipk)
 lamastudi = input("Masukan lama studi = ")
-lamastudi = int(lamastudi)
+lamastudi = float(lamastudi)
 if (ipk >= 3.51 and ipk <=4 and lamastudi <=4):
     print("Selamat Anda Meraih Predikat Summa Cumlaude")
 elif (ipk >= 3.51 and ipk <=4 and lamastudi > 4):
