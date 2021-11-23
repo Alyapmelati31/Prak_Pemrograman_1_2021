@@ -5,13 +5,13 @@ Prodi : Teknologi Informasi
 */
 
 import java.util.Scanner;
-public class ProyekSiakad {
+public class ProjectSiakad {
     Mahasiswa[] mahasiswa = new Mahasiswa[1000];
     private int jumlahData = 0;
 
     public static void main(String[] args) {
         
-        ProyekSiakad siakad = new ProyekSiakad();
+        ProjectSiakad siakad = new ProjectSiakad();
         int menu = 0;
         while (menu!=5) {
             menu = tampilanMenu();
