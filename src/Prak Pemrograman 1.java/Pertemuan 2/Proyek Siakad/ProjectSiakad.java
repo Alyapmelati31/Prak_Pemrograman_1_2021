@@ -59,11 +59,13 @@ public class ProjectSiakad {
         String nim = scan.nextLine();
         System.out.print("Masukan nama mahasiswa = ");
         String nama = scan.nextLine();
+        System.out.print("Masukan Semester = ");
+        int semester = scan.nextInt();
         System.out.print("Masukan IPK mahasiswa = ");
         double ipk = scan.nextDouble();
         System.out.print("Masukan Tinggi Badan mahasiswa = ");
         double tinggi = scan.nextDouble();
-        Mahasiswa inputMahasiswa = new Mahasiswa(nim, nama, ipk);
+        Mahasiswa inputMahasiswa = new Mahasiswa(nim, nama, semester, ipk);
         inputMahasiswa.setTinggiBadang(tinggi);
         mahasiswa[jumlahData] = inputMahasiswa;
         jumlahData++;
