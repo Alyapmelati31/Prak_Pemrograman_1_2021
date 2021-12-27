@@ -65,10 +65,17 @@ public class ProjectSiakad {
         String nama = scan.nextLine();
         System.out.print("Masukan Semester = ");
         int semester = scan.nextInt();
-        System.out.print("Masukan IPK mahasiswa = ");
-        double ipk = scan.nextDouble();
-        System.out.print("Masukan Tinggi Badan mahasiswa = ");
-        double tinggi = scan.nextDouble();
+        double ipk = 0;
+        double tinggi = 0;
+        try {
+            System.out.print("Masukan IPK mahasiswa = ");
+            ipk = scan.nextDouble();
+            System.out.print("Masukan Tinggi Badan mahasiswa = ");
+            tinggi = scan.nextDouble();
+        } catch (Exception e) {
+            System.out.println("Anda harus memasukan bilangan desimal dengan menggunakan tanda titik");
+            System.out.println("Silahkan edit IPK atau tinggi anda setelah input data");
+        }
         Mahasiswa inputMahasiswa = new Mahasiswa(nim, nama, semester, ipk);
         inputMahasiswa.setTinggiBadang(tinggi);
         mahasiswa[jumlahData] = inputMahasiswa;
@@ -78,10 +85,10 @@ public class ProjectSiakad {
 
     public void cariData() {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Masukan NIM mahasiswa yang akan dicari = ");
-        String nim = scan.nextLine();
-        int index = getIndexByNIM(nim);
-        if (index==-1) {
+        System.out.print("Masukan Nama Mahasiswa yang akan dicari = ");
+        String nama = scan.nextLine();
+        int index = getIndexByNama(nama);
+        if (index == -1) {
             System.out.println("Data yang Anda Cari Tidak Ada");
         } else {
             mahasiswa[index].getDetail();
@@ -91,6 +98,15 @@ public class ProjectSiakad {
     public int getIndexByNIM(String nim) {
         for (int i=0; i<jumlahData; i++) {
             if (mahasiswa[i].getNIM().equals(nim)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int getIndexByNama(String nama) {
+        for (int i=0; i<jumlahData; i++) {
+            if (mahasiswa[i].getNama().equals(nama)) {
                 return i;
             }
         }
