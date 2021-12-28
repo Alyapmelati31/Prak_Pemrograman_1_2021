@@ -142,9 +142,12 @@ public class ProjectSiakad {
                 int konfirmasi = scan.nextInt();
                 if (konfirmasi == 0) {
                     System.out.println("Tidak Dihapus");
+
+                    lihatData();
                     break;
                 } else {
                     mahasiswa[i] = mahasiswa[i+1];
+                    
                     jumlahData--;
                     lihatData();
                 }
