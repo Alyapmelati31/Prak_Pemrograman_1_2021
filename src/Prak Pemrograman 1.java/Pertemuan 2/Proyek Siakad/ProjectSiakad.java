@@ -138,7 +138,13 @@ public class ProjectSiakad {
             System.out.println("Data yang anda akan hapus tidak ketemu");
         } else {
             for (int i = index; i<jumlahData; i++) {
-                mahasiswa[i] = mahasiswa[i+1];
+                System.out.println("Apakah Anda Yakin Ingin Menghapus Data?");
+                int konfirmasi = scan.nextInt();
+                if (konfirmasi == 0) {
+                    System.out.println("Tidak Dihapus");
+                } else {
+                    mahasiswa[i] = mahasiswa[i+1];
+                }
             }
             jumlahData--;
             lihatData();
